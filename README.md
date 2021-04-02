@@ -41,6 +41,14 @@ To run this application you will need the following:
 * In the `appsettings.json` file you will need to add the following code
 ```
 {
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "AllowedHosts": "*",
   "ConnectionStrings": {
       "DefaultConnection": "Server=localhost;Port=3306;database=nick_lindau;uid=[USERIDHERE];pwd=[USERPASSWORDHERE];"
   }
@@ -119,7 +127,29 @@ http://localhost:5000/api/Animals/?description=spayed&type=dog
 ```
 
 ### 5) Testing Authentication:
-#### This step will use a Test User I hardcoded into UserService.cs to showcase JWT Authentication in Postman
+#### This step will use a Test User I hardcoded into UserService.cs to showcase JWT Authentication in 
+
+### Updating AppSettings.Json to test Authentication
+*You will need to make a small update to your AppSettings.Json file in order to run this test
+```
+{
+  "AppSettings": {
+    "Secret": "[INSERT ANY STRING HERE]"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;database=nick_lindau;uid=root;pwd=epicodus;"
+  }
+}
+```
+* assign Secret to any string to be able to authenticate users.
 ### Authenticating a User
 * In Postman make a POST request with the dropdown selector to the following URL  `http://localhost:5000/users/authenticate`
 * Select the 'Body' tab under the URL input box and select the 'raw' radio button and then 'JSON' from the dropdown list on the right
