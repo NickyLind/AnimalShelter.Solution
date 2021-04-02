@@ -29,9 +29,9 @@ To run this application you will need the following:
 
 ### 1) Cloning the Project:
 #### You will need to run a copy of the application in order to make API calls.
-* Find the respository at (https://)
+* Find the respository at (https://github.com/NickyLind/AnimalShelter.Solution)
 * Select the green <span style="color:green">'Code'</span> button above the repository and copy the HHTPS link
-* In your terminal, find the directory you want to place the [INSERT PROJECT HERE] directory in
+* In your terminal, find the directory you want to place the `AnimalShelter.Solution` directory in
 * In your terminal, use the git command `$git clone https://github.com/NickyLind/AnimalShelter.Solution`
 * Open in Visual Studio Code or another editor
 
@@ -56,11 +56,11 @@ To run this application you will need the following:
 #### You will need to have the application running in order to use the API
 * Once the project is successfully cloned and the database is connected to can now run the project
 * Navigate to the `AnimalShelter` directory and build the project with the command `dotnet build` to ensure there are no compiling errors
-* Once the project is succesfully built you may run the command `dotnet run` and navigate to Http://localport:5000 in your browser to access the applications
+* Once the project is succesfully built you may run the command `dotnet run` and a browser should automatically be opened to http://localhost:5000/api/Animals
 
-### 4) EndPoints
+### 4) EndPoints:
 Base URL: `http://localhost:5000/api/Animals`
-* The Base URL contains all animals currently loaded into the database *
+* The Base URL contains all animals currently loaded into the database 
 #### HTTP request structure
 ```
 GET: /api/Animals
@@ -88,6 +88,7 @@ http://localhost:5000/api/Animals/2
 ```
 
 #### Path Parameters
+###### path parameters are only required when using a POST request to create a new API entry, not to query the API.
 
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | :---: |
@@ -97,6 +98,25 @@ http://localhost:5000/api/Animals/2
 | Gender | string | none | true | Return animal gender |
 | Breed | string | none | false | Return breed of cat/dog |
 | Description | string | none | false | Returns details of animal |
+
+#### Example Query 
+```
+http://localhost:5000/api/Animals/?description=spayed&type=dog
+```
+#### Example JSON Response
+```
+[
+    {
+        "animalId": 8,
+        "name": "Charlie",
+        "type": "Dog",
+        "age": 2,
+        "gender": "Female",
+        "breed": "Chocoloate Lab",
+        "description": "Spayed, loves playing fetch and being active"
+    }
+]
+```
 ## Known Bugs
 
 * _None currently found, feel free to shoot me an email_
