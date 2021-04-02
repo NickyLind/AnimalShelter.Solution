@@ -1,17 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using WebApi.Services;
-using WebApi.Models;
+using AnimalShelter.Services;
+using AnimalShelter.Models;
 using System.Linq;
 
-namespace WebApi.Controllers
+namespace AnimalShelter.Controllers
 {
   [Authorize]
   [ApiController]
   [Route("[controller]")]
   public class UsersController : ControllerBase
   {
-    private IUserServiuce _userService;
+    private IUserService _userService;
 
     public UsersController(IUserService userService)
     {
@@ -38,3 +38,6 @@ namespace WebApi.Controllers
     }
   }
 }
+// The ASP.NET Core users controller defines and handles all routes / endpoints for the api that relate to users, this includes authentication and standard CRUD operations. Within each route the controller calls the user service to perform the action required, this enables the controller to stay 'lean' and completely separated from the business logic and data access code.
+
+// The controller actions are secured with JWT using the [Authorize] attribute, with the exception of the Authenticate method which allows public access by overriding the [Authorize] attribute on the controller with [AllowAnonymous] attribute on the action method. I chose this approach so any new action methods added to the controller will be secure by default unless explicitly made public.
