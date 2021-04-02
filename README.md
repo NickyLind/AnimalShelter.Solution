@@ -117,6 +117,25 @@ http://localhost:5000/api/Animals/?description=spayed&type=dog
     }
 ]
 ```
+
+### 5) Testing Authentication:
+#### This step will use a Test User I hardcoded into UserService.cs to showcase JWT Authentication in Postman
+### Authenticating a User
+* In Postman make a POST request with the dropdown selector to the following URL  `http://localhost:5000/users/authenticate`
+* Select the 'Body' tab under the URL input box and select the 'raw' radio button and then 'JSON' from the dropdown list on the right
+* Enter the following JSON object into the text box:
+```
+{
+    "username": "test",
+    "password": "test"
+}
+```
+* click send and you should get a 200 OK reponse with that user's details including a JWT token in the response body. You will need this token for the next step
+### Make an authenticated request to retrieve all Users
+* In Postmant make a GET request with the dropdown selector to the following URL `http://localhost:5000/users`
+* Select the 'Authorization' tab underneath the URL field and change the 'Type' to 'Bearer Token'
+* Enter the token from the previous set of test instructions to recieve a 200 OK reponse and a list of all users in the response body
+
 ## Known Bugs
 
 * _None currently found, feel free to shoot me an email_
