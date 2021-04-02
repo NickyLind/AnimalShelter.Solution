@@ -91,10 +91,12 @@ http://localhost:5000/api/Animals/2
 
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | :---: |
-|
-|
-|
-|
+| Name | string | none | false | Return matches by name |
+| Type | string | none | true | Return species of animal (cat or dog) |
+| Age | int | none | true | Return animal age |
+| Gender | string | none | true | Return animal gender |
+| Breed | string | none | false | Return breed of cat/dog |
+| Description | string | none | false | Returns details of animal |
 ## Known Bugs
 
 * _None currently found, feel free to shoot me an email_
