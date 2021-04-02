@@ -89,7 +89,12 @@ http://localhost:5000/api/Animals/2
 
 #### Path Parameters
 
-
+| Parameter | Type | Default | Required | Description |
+| :---: | :---: | :---: | :---: | :---: |
+|
+|
+|
+|
 ## Known Bugs
 
 * _None currently found, feel free to shoot me an email_
