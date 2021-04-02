@@ -1,10 +1,11 @@
-# _{Application Name}_
-
-#### _{Brief description of application}_
-
+# _Animal Shelter_
 #### By _**Nick Lindau**_
+<br>
 
-## Technologies Used
+## Prompt
+#### _Create an API for a local animal shelter. The API will list the available cats and dogs at the shelter._
+
+### Technologies Used
 
 * _.NET5.0_
 * _C#_
@@ -13,20 +14,18 @@
 * _MySql_
 * _MySql Workbench_
 * _Entity Framework_
-* _Bootstrap_
-* _CSS_
 * _ASP.NET Razor_
-* _Identity_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_You've completed a few projects at the dev agency where you work and you've been given more autonomy to choose which project you'd like to work on next. The agency currently has three new back-end contracts to build APIs for their clients. Since this is the first time you've been given free rein on a project, take this opportunity to showcase your versatility for the project manager._
 
 ## Setup/Installation Requirements
 To run this application you will need the following:
 * A code editor. [Visual Studio Code](https://code.visualstudio.com/) is what I use.
 * [ASP.NET Core](https://dotnet.microsoft.com/download)
 * [MySQL and MySQL Workbench](https://www.mysql.com/)
+* It is also recommended that [Postman](https://www.postman.com/) be downloaded as it makes it easier to follow information being passed to and from endpoints and see what HTTP responses you are getting.
 
 ### 1) Cloning the Project:
 * Find the respository at (https://)
@@ -59,13 +58,12 @@ To run this application you will need the following:
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _None currently found, feel free to shoot me an email_
 
 ## License
 
 _[MIT](https://choosealicense.com/licenses/mit/)_
- _Copyright (c) Nick Lindau 01/29/2021_
+ _Copyright (c) Nick Lindau 04/02/2021_
 
 ## Contact Information
 
