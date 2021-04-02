@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AnimalShelter.Entities;
 
-namespace WebApi.Helpers
+namespace AnimalShelter.Helpers
 {
   public static class ExtensionMethods
   {
