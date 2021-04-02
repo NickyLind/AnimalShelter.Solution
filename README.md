@@ -127,10 +127,10 @@ http://localhost:5000/api/Animals/?description=spayed&type=dog
 ```
 
 ### 5) Testing Authentication:
-#### This step will use a Test User I hardcoded into UserService.cs to showcase JWT Authentication in 
+#### This step will use a Test User I hardcoded into UserService.cs to showcase JWT Authentication in application
 
 ### Updating AppSettings.Json to test Authentication
-*You will need to make a small update to your AppSettings.Json file in order to run this test
+* You will need to make a small update to your AppSettings.Json file in order to run this test
 ```
 {
   "AppSettings": {
@@ -160,7 +160,7 @@ http://localhost:5000/api/Animals/?description=spayed&type=dog
     "password": "test"
 }
 ```
-* click send and you should get a 200 OK reponse with that user's details including a JWT token in the response body. You will need this token for the next step
+* Click send and you should get a 200 OK reponse with that user's details including a JWT token in the response body. You will need this token for the next step
 ### Make an authenticated request to retrieve all Users
 * In Postmant make a GET request with the dropdown selector to the following URL `http://localhost:5000/users`
 * Select the 'Authorization' tab underneath the URL field and change the 'Type' to 'Bearer Token'
