@@ -43,7 +43,7 @@ namespace AnimalShelter.Controllers
 
       if (description != null)
       {
-        query = query.Where(entry => entry.Description == description);
+        query = query.Where(entry => entry.Description.Contains(description));
       }
 
       if (age != 0)
