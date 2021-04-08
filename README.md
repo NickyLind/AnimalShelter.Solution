@@ -64,7 +64,7 @@ To run this application you will need the following:
 #### You will need to have the application running in order to use the API
 * Once the project is successfully cloned and the database is connected to can now run the project
 * Navigate to the `AnimalShelter` directory and build the project with the command `dotnet build` to ensure there are no compiling errors
-* Once the project is succesfully built you may run the command `dotnet run` and a browser should automatically be opened to http://localhost:5000/api/Animals
+* Once the project is succesfully built you may run the command `dotnet run` and a browser should automatically be opened to http://localhost:5000/api/animals
 
 ### 4) EndPoints:
 Base URL: `http://localhost:5000/api/animals`
