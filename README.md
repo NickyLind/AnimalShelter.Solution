@@ -67,19 +67,19 @@ To run this application you will need the following:
 * Once the project is succesfully built you may run the command `dotnet run` and a browser should automatically be opened to http://localhost:5000/api/Animals
 
 ### 4) EndPoints:
-Base URL: `http://localhost:5000/api/Animals`
+Base URL: `http://localhost:5000/api/animals`
 * The Base URL contains all animals currently loaded into the database 
 #### HTTP request structure
 ```
-GET: /api/Animals
-POST: /api/Animals
-GET: /api/Animals/{id}
-PUT: /api/Animals/{id}
-DELETE: /api/Animals{id}
+GET: /api/animals
+POST: /api/animals
+GET: /api/animals/{id}
+PUT: /api/animals/{id}
+DELETE: /api/animals{id}
 ```
 #### Example Query
 ```
-http://localhost:5000/api/Animals/2
+http://localhost:5000/api/animals/2
 ```
 
 #### Example JSON Response
@@ -109,7 +109,7 @@ http://localhost:5000/api/Animals/2
 
 #### Example Query 
 ```
-http://localhost:5000/api/Animals/?description=spayed&type=dog
+http://localhost:5000/api/animals?description=spayed&type=dog
 ```
 #### Example JSON Response
 ```
